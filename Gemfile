@@ -57,3 +57,5 @@ gem 'telegram-bot-ruby'
 gem 'dotenv'
 
 ruby '2.3.0'
+
+gem 'puma'
