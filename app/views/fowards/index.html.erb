@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Fowards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chat</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fowards.each do |foward| %>
+      <tr>
+        <td><%= foward.chat_id %></td>
+        <td><%= foward.first_name %></td>
+        <td><%= foward.last_name %></td>
+        <td><%= link_to 'Show', foward %></td>
+        <td><%= link_to 'Edit', edit_foward_path(foward) %></td>
+        <td><%= link_to 'Destroy', foward, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Foward', new_foward_path %>

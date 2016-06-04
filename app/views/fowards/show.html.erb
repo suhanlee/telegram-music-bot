@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chat:</strong>
+  <%= @foward.chat_id %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @foward.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @foward.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_foward_path(@foward) %> |
+<%= link_to 'Back', fowards_path %>
